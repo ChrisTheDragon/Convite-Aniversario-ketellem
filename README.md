@@ -1,6 +1,6 @@
-# Convite de Casamento
+# Convite de Aniversário — Ketellem Castro
 
-Convite de casamento interativo, responsivo e otimizado para dispositivos móveis. O projeto utiliza HTML, CSS e JavaScript puros, com efeito de virar páginas através do Swiper.js.
+Convite interativo para os 18 anos de Ketellem Castro, responsivo e otimizado para dispositivos móveis. O projeto utiliza HTML, CSS e JavaScript puros, com animação de virar páginas através do Swiper.js.
 
 ## Link do convite
 
@@ -19,99 +19,28 @@ Convite de casamento interativo, responsivo e otimizado para dispositivos móvei
   - Great Vibes
   - Montserrat
 
-## Estrutura do repositório
+## Estrutura do convite
 
 ```text
 .
-├── index.html
-├── README.md
-├── css/
-│   └── styles.css
-├── js/
-│   └── script.js
-├── assets/
-│   ├── audio/
-│   │   ├── audio.mp3
-│   │   └── .gitkeep
-│   └── images/
-│       ├── Convite.jpeg
-│       ├── casal8.jpeg
-│       ├── casal2.jpeg
-│       ├── casal3.jpeg
-│       ├── casal4.jpeg
-│       ├── casal5.jpeg
-│       └── .gitkeep
-└── pages/
-    ├── dress-code.html
-    ├── manual.html
-    └── presentes.html
+├── Capa de abertura: assets/images/Capa_convite.jpeg
+├── Página 1 — festa: assets/images/img_1.webp
+├── Página 2 — dress code e botões: assets/images/img_2.webp
+├── Página 3 — agradecimento: assets/images/img_3.webp
+├── Imagem de compartilhamento: assets/images/Cover_convite.png
+└── Música: assets/audio/audio.mp3
 ```
 
-## Páginas do convite
+## Páginas
 
-- **Capa:** utiliza `assets/images/Convite.jpeg` e abre o convite ao tocar no selo.
-- **Imagem de compartilhamento:** utiliza `assets/images/Cover2.jpeg`.
-- **Mensagem inicial:** utiliza `assets/images/casal8.jpeg`.
-- **Data do casamento:** utiliza `assets/images/casal2.jpeg`.
-- **Informações do evento:** utiliza `assets/images/casal3.jpeg`.
-- **Menu de ações:** utiliza `assets/images/casal4.jpeg`.
-- **Mensagem final:** utiliza `assets/images/casal5.jpeg`.
-- **Dress Code:** página independente em `pages/dress-code.html`.
-- **Manual dos convidados:** página independente em `pages/manual.html`.
-- **Sugestão de presentes:** página independente em `pages/presentes.html`.
+- **Capa:** abre o convite e inicia a música ao tocar no selo.
+- **Festa:** apresenta o nome, a idade, a data, o horário e o local.
+- **Dress code:** descreve o traje social e oferece os botões de localização e confirmação de presença.
+- **Agradecimento:** encerra o convite com uma mensagem para os convidados.
 
 ## Personalização
 
-### Imagens
-
-Substitua os arquivos dentro de `assets/images/`, mantendo os mesmos nomes, ou atualize os caminhos no HTML e CSS.
-
-Os nomes dos arquivos diferenciam letras maiúsculas e minúsculas:
-
-```text
-Convite.jpeg
-Cover2.jpeg
-casal8.jpeg
-casal2.jpeg
-casal3.jpeg
-casal4.jpeg
-casal5.jpeg
-```
-
-### Música
-
-Adicione o arquivo de áudio em:
-
-```text
-assets/audio/audio.mp3
-```
-
-O áudio é iniciado após o usuário tocar no selo da capa, respeitando as políticas de autoplay dos navegadores móveis.
-
-### Links
-
-No `index.html`, atualize:
-
-- Link do Google Maps.
-- Número e mensagem do WhatsApp.
-- Textos, nomes, datas e local do evento.
-
-Os pontos de personalização estão identificados com comentários `SUBSTITUA`.
-
-### Estilos
-
-Os principais estilos estão em `css/styles.css`. As variáveis no início do arquivo controlam cores, tamanhos e sobreposições das páginas, por exemplo:
-
-```css
---final-text
---final-overlay
---final-message-size
---menu-panel
---menu-icon-size
-```
-
-
-## Observações
+No `index.html`, substitua os links temporários `href="#"` dos botões **Como chegar** e **Confirmar presença** pelos links do Google Maps e WhatsApp quando estiverem disponíveis. Os estilos e a configuração das imagens ficam em `css/styles.css`.
 
 - O projeto não requer Node.js, compilação ou dependências locais.
 - O layout foi desenvolvido com foco em dispositivos móveis.
